@@ -9,9 +9,8 @@ puts fullname
  greeting_style = "Hello"
  greeting = greeting_style + " " + name
  puts greeting
-
+ capitalize
  # Reversing a String
-
  reversed_string = "Hello Ruby".reverse
  puts reversed_string
  
@@ -41,7 +40,11 @@ puts fullname
  puts string[2]
  puts fullname[0]
 
+ array = ["a", "b", "c"]
 
+ puts array.map { |string| string.upcase }
+ 
+ # ["A", "B", "C"]
 
 
 
