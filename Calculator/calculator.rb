@@ -19,41 +19,39 @@ def addition_function(n1, n2)
 end
 
 def subtraction_function(n1, n2)
-    @n1 = $num1
-    @n2 = $num2
+    @n1 = n1
+    @n2 = n2
     @result = @n1 - @n2
     puts "The answer is #{@result}"
 end
 
 def division_function(n1, n2)
-    @n1 = $num1
-    @n2 = $num2
+    @n1 = n1
+    @n2 = n2
     @result = @n1 / @n2
     puts "The answer is #{@result}"
 end
 
 def multiplication_function(n1, n2)
-    @n1 = $num1
-    @n2 = $num2
+    @n1 = n1
+    @n2 = n2
     @result = @n1 * @n2
     puts "The answer is #{@result}"
 end
+
 
 if fun == 1 then
     addition_function($num1, $num2)
     
 end
 if fun == 2 then
-    result = $num1 - $num2
-    puts "answer #{result}"
+    subtraction_function($num1, $num2)
 end
 if fun == 3 then
-    result = $num1 / $num2
-    puts "answer #{result}"
+    division_function($num1, $num2)
 end
 if fun == 4 then
-    result = $num1 * $num2
-    puts "answer #{result}"
+    multiplication_function($num1, $num2)
 end
 
 
