@@ -38,12 +38,41 @@ puts fullname
 
  #First position is zero
  string = "headphone"
- puts string[2]
- puts fullname[0]
+ puts "Second position is " + string[2]
+ puts "first position is " + fullname[0]
 
+#Last position is -1
+ puts "the last position is " + string[-1]
+ puts "the second last position is " + string[-2]
 
+#Check for the Starting Characters in a String 
+puts string.start_with?("h")
 
+#Check if a String is included in another String
+puts string.include?("headphone")
 
+#Convert String to Characters
+characters = fullname.chars
+puts "Printing all characters"
+puts characters
 
+puts "printing 3rd character"
+puts characters[2]
 
+#Interpolation using double quoted string
+#Interpolation only works if the string is using double quotes
+
+greet = "Good Morning " + fname #or
+greet1 = "Good Morning #{fname}"
+puts greet
+puts greet1
+
+puts "Current time is #{Time.now}"
+
+movie = "Gone with the wind"
+puts "We are going to watch #{movie}"
+
+city = "Tokyo"
+country = "Japan"
+puts "#{city} is the capital of #{country}"
 
