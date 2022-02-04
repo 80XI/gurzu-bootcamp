@@ -54,7 +54,4 @@ if fun == 4 then
     multiplication_function($num1, $num2)
 end
 
-
-
-
-# #clear screen?
+system("clear")
