@@ -1,3 +1,5 @@
+system("clear")
+
 operation = ["1. Addition", "2. Subtraction", "3. Division", "4. Multiplication"]
 puts operation[0..3]
 in_operation = gets.chomp.to_i
@@ -15,28 +17,28 @@ def addition_function(n1, n2)
     @n1 = n1
     @n2 = n2
     @result = @n1 + @n2
-    puts "The answer is #{@result}"
+    puts "The addition of #{@n1} and #{@n2} is #{@result}"
 end
 
 def subtraction_function(n1, n2)
     @n1 = n1
     @n2 = n2
     @result = @n1 - @n2
-    puts "The answer is #{@result}"
+    puts "The subtraction of #{@n1} and #{@n2} is #{@result}"
 end
 
 def division_function(n1, n2)
     @n1 = n1
     @n2 = n2
     @result = @n1 / @n2
-    puts "The answer is #{@result}"
+    puts "The division of #{@n1} and #{@n2} is #{@result}"
 end
 
 def multiplication_function(n1, n2)
     @n1 = n1
     @n2 = n2
     @result = @n1 * @n2
-    puts "The answer is #{@result}"
+    puts "The multiplication of #{@n1} and #{@n2} is #{@result}"
 end
 
 
@@ -54,4 +56,4 @@ if fun == 4 then
     multiplication_function($num1, $num2)
 end
 
-system("clear")
+
