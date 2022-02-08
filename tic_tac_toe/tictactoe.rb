@@ -21,7 +21,7 @@ def position_taken(usr_inpt)
       @player2.push(usr_inpt)
       @player2.sort
     end
-  display_board(@board)
+    display_board(@board)
   else
     puts "Your move is invalid, enter again (1-9)"
     usr_inpt = gets.chomp.to_i-1
