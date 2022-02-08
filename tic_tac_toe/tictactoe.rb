@@ -17,9 +17,11 @@ def position_taken(usr_inpt)
         if @isfirstplayer then
             @board[usr_inpt] = "X"
             @player1.push(usr_inpt)
+            @player1.sort
         else
             @board[usr_inpt] = "O"
             @player2.push(usr_inpt)
+            @player2.sort
         end
     display_board(@board)
     else
@@ -44,7 +46,7 @@ def position_taken(usr_inpt)
     if @win_combinations.include?(@player2) 
         puts "Player 2 is winner"
     end
-    end
+end
 
 @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 @player1 = []
@@ -63,7 +65,8 @@ end
         main
         i += 1
         if @win_combinations.include?(@player1) || @win_combinations.include?(@player2)
-            #TODO: Reset all the array
+            #TODO: reset array
+
             # puts "Do you want to continue?(Y/N)" 
             # continue = gets.chomp
             # if
