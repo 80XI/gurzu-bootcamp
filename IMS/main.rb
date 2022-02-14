@@ -36,8 +36,9 @@ def delete
   puts ("Row with id #{@del_id} is deleted")
 end
 
-if nameoffun == 1 then
-  connection
+case nameoffun
+  when 1
+    connection
     puts "Enter Id"
     @id = gets.chomp
     puts "Enter Product Category"
@@ -58,27 +59,19 @@ if nameoffun == 1 then
     @p_s = gets.chomp
     create
     puts "Successful"
-end
-
-if nameoffun == 2 then
-  connection
-  read
-end
-
-if nameoffun == 3 then
-  connection
-  # puts "Enter a Id where you want to modify"
-  # @update_id = gets.chomp
-  puts "Enter which column you want to modify"
-  @update_col = gets. chomp
-  puts "Enter the update"
-  @update_new = gets. chomp
-  update_row
-end
-
-if nameoffun == 4 then
-  connection
-  puts "Enter Id number to delete"
-  @del_id = gets.chomp
-  delete
+  when 2
+    connection
+    read
+  when 3
+    connection
+    puts "Enter which column you want to modify"
+    @update_col = gets. chomp
+    puts "Enter the update"
+    @update_new = gets. chomp
+    update_row
+  when 4
+    connection
+    puts "Enter Id number to delete"
+    @del_id = gets.chomp
+    delete
 end
